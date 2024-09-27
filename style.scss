@@ -1,0 +1,195 @@
+header{
+    background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+    padding: 10em 0;
+    background-attachment: fixed, fixed, fixed;
+    background-image: url("/img/overlay2.png"), url("/img/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+    overflow: hidden;
+    position: relative;
+    }
+.section-one{
+    padding: 8em 0;
+}
+
+.section-two{
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed, fixed;
+    background-image: url("/img/overlay1.png"), url("/img/header.jpg");
+    background-size: auto, cover;
+    padding: 8em 0;
+
+    .heading::after{
+        background: white;
+        content: '';
+        display: inline-block;
+        height: 1px;
+        margin-top: 1.5em;
+        width: 6em;
+        
+    
+    }
+
+
+    
+
+    .col{
+        ul{
+            display:grid !important;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 7em;
+
+            li{
+                width: 150px; /* Adjust the width/height as needed */
+                height: 150px;
+                background-color: transparent; /* Background inside the diamond */
+                border: 3px solid white; /* Thickness and color of the border */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: rotate(45deg); /* Rotate to make it a diamond */
+                overflow: hidden; /* Hide the overflow to keep the diamond shape clean */
+
+                svg{
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+   
+}
+
+li{
+    list-style-type: none;
+}
+ 
+.image-1{
+    height:100% !important;
+}
+.section-three{
+    padding: 8em 0;
+
+    .heading::after{
+        background: rgba(144, 144, 144, 0.5);
+        content: '';
+        display: inline-block;
+        height: 1px;
+        margin-top: 1.5em;
+        width: 6em;
+    }
+    
+
+}
+.section-four{
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed, fixed;
+    background-image: url("images/overlay1.png"), url("/img/header.jpg");
+    background-size: auto, cover;
+    padding: 6em 0;
+
+    .heading::after{
+        background: rgba(144, 144, 144, 0.5);
+        content: '';
+        display: inline-block;
+        height: 1px;
+        margin-top: 1.5em;
+        width: 6em;
+    }
+}
+footer{
+    padding: 6em 0;
+    background-color: #4686a0;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed, fixed, fixed;
+    background-image: url("/img/overlay2.png"), url("/img/overlay3.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+    text-align: center;
+}
+@media screen and (max-width:1200px){
+    .section-two{
+        .row{
+            gap: 5em;
+
+        }
+        li{
+            width: 100px !important; /* Adjust the width/height as needed */
+            height: 100px !important;
+
+        }
+        svg{
+            width: 80px;
+            height:80px;
+        }
+    }
+}
+@media screen and (max-width:992px){
+    .row{
+        flex-direction: column-reverse;
+        text-align: center !important;
+    }
+    .section-two{
+        .row{
+            flex-direction: column;
+            .col{
+                ul{
+                    display:grid !important;
+                    grid-template-rows: 1fr 1fr;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 5em;
+                    justify-content: center;
+                    align-items: center;
+                }
+        }
+       
+    }
+    
+
+    
+}
+@media screen and (max-width:576px){
+    .section-two{
+        li{
+            width: 80px !important; /* Adjust the width/height as needed */
+            height: 80px !important;
+
+        }
+        svg{
+            width: 60px;
+            height:60px;
+        }
+        
+    }
+
+}
+@media screen and (max-width:490px){
+    .section-two{
+        .col{
+            ul{
+                grid-template-rows: 1fr 1fr 1fr !important;
+                grid-template-columns: 1fr 1fr !important;
+                gap: 5em;
+            }
+
+    }
+
+}
+}
+@media screen and (max-width: 410px){
+    .ul-buttons{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 1em;
+
+        .signup{
+            margin:0;
+
+        }
+    }
+
+}
+}
